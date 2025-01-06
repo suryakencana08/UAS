@@ -1,0 +1,67 @@
+.container-crud {
+  height: auto;
+  background: #fff;
+  width: 100%;
+  max-width: 1200px;
+  margin: -3rem auto;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.container-crud h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+form textarea {
+  font-family: "poppins";
+  resize: none;
+  height: 100px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+form input[type="file"] {
+  padding: 1rem;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  justify-content: center;
+}
+.btn-create,
+.btn-cancel {
+  background-color: #e600ff;
+  color: white;
+  border: none;
+  padding: 1rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-create:hover {
+  background-color: #b200f9;
+}
+.btn-cancel {
+  background-color: #dc3545;
+}
+.btn-cancel:hover {
+  background-color: #b02a37;
+}
