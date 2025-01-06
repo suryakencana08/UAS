@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InkSpire</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#index" class="logo">InkSpire.</a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checknav">
+        <i class="bx bx-menu"></i>
+      </label>
+      <nav class="navbar">
+        <a href="#index">Home</a>
+        <a href="#latest-news">Recently News</a>
+        <a href="#top-creator">Creators</a>
+        <a href="#article">Articles</a>
+        <a href="#contact-us">Contact Us</a>
+        <a href="#logout" id="logoutButton" class="logout">Logout</a>
+      </nav>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <div class="container">
+      <div class="welcome" id="index">
+        <h4>WELCOME TO INKSPIRE</h4>
+        <h2>
+          Explore the world of <span>art</span> 🎨, where
+          <span>creativity</span> ✍️ brings ideas to life, <br />and
+          <span>imagination</span> 💡 unlocks new possibilities.
+        </h2>
+      </div>
+      <div class="main-article">
+        <img src="assets/img/draw3.jpg" alt="Abstract Art" />
+        <div class="article-content">
+          <!-- Profile section -->
+          <div class="creator-item-welcome">
+            <img src="assets/img/imgprofile.jpg" />
+            <div class="capt-profile">
+              <h5>Rinzz</h5>
+              <p>Traditional Artist</p>
+            </div>
+          </div>
+          <h3>Anime Drawing</h3>
+          <p style="color: #898989">
+            Anime drawing presents a captivating blend of imagination, emotion,
+            and storytelling. It invites viewers into vibrant worlds where
+            characters are brought to life through expressive lines, bold
+            colors, and exaggerated features, creating a visually dynamic
+            experience. The art style's intricate details, combined with its
+            fluid compositions, allow for a deep connection between the viewer
+            and the characters. Through these drawings, emotions are amplified,
+            and narratives unfold with a sense of energy that traditional art
+            forms may not capture. Anime drawing transcends the visual, offering
+            an exploration of complex themes such as heroism, personal growth,
+            identity, and relationships. Each piece encourages the viewer to
+            interpret meaning beyond the surface, engaging with the art on a
+            personal and emotional level. This genre of art offers limitless
+            possibilities for thought and reflection, as it continuously
+            challenges the boundaries of visual storytelling.
+          </p>
+          <!-- Category and time posted -->
+          <div class="article-meta">
+            <span class="time-posted">4 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECENTLY NEWS SECTION -->
+      <div class="latest-news" id="latest-news">
+        <div class="latest-news-header">
+          <h1>Recently Art News</h1>
+          <div class="see-all">
+            <a id="seeAll">See all <span>&rarr;</span></a>
+            <a id="less" style="display: none"><span>&larr;</span> Less</a>
+          </div>
+        </div>
+        <div class="news-grid">
+          <div class="news-item">
+            <img src="assets/img/exhibition.jpg" alt="Art News 1" />
+            <div class="content">
+              <h5>A New Wave in Modern Art. Exhibition opens this week</h5>
+              <p>
+                Explore how modern art is evolving with new perspectives from
+                contemporary artists.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/digital-traditional.png" alt="Art News 2" />
+            <div class="content">
+              <h5>Exploring the Fusion of Digital and Traditional Art</h5>
+              <p>
+                Learn about the growing trend of blending digital technology
+                with classic art forms.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/nature.jpg" alt="Art News 3" />
+            <div class="content">
+              <h5>Young Artist Blends Nature and Art in Stunning Exhibits</h5>
+              <p>
+                A fresh perspective on how nature and art can be harmoniously
+                merged in exhibitions.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/surrealism.png" alt="Art News 4" />
+            <div class="content">
+              <h5>The Influence of Surrealism in Modern Art</h5>
+              <p>
+                Delve into how surrealist techniques continue to influence
+                contemporary art movements.
+              </p>
+            </div>
+          </div>
+
+          <!-- penambahan konten see all -->
+          <div class="news-item">
+            <img src="assets/img/art-supplies.jpg" alt="Art News 4" />
+            <div class="content">
+              <h5>Essential Art Supplies Every Artist Needs</h5>
+              <p>
+                Discover essential art supplies that enhance creativity and help
+                bring your artistic vision to life.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/exhibition2.jpg" alt="Art News 4" />
+            <div class="content">
+              <h5>
+                Masterpieces in Stone : Sculpture Exhibition Opens This Week
+              </h5>
+              <p>
+                Explore stone sculptures that capture depth and emotion through
+                modern artistry.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/graffiti.jpg" alt="Art News 4" />
+            <div class="content">
+              <h5>The Bold World of Graffiti : An Exhibition of Urban Art</h5>
+              <p>
+                Discover graffiti as a dynamic and powerful form of street art,
+                where creativity meets urban expression.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="assets/img/ai-art.jpg" alt="Art News 4" />
+            <div class="content">
+              <h5>The Rise of AI Art : A New Era of Creativity</h5>
+              <p>
+                Explore AI-generated art, where technology and creativity merge
+                to create new artistic possibilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDITORS PICK -->
+      <div class="editors-pick">
+        <div class="editors-header">
+          <h1>Editor's Pick</h1>
+        </div>
+        <!-- Main Feature -->
+        <div class="main-feature">
+          <img src="assets/img/photo 1.png" alt="Main Feature" />
+          <div class="content">
+            <h2>
+              The Evolution of Modern Drawing: From Sketches to Digital
+              Masterpieces
+            </h2>
+            <p>
+              Explore how drawing has evolved over centuries, embracing digital
+              technology while preserving traditional roots.
+            </p>
+            <div class="meta"><span>Art</span> • <span>12 min read</span></div>
+          </div>
+        </div>
+        <div class="grid">
+          <!-- Smaller Items -->
+          <div class="item">
+            <img src="assets/img/photo 2.png" alt="Article 1" />
+            <div class="content">
+              <h5>5 Revolutionary Drawing Styles You Need to Know</h5>
+              <p>
+                Discover the unique techniques that transformed the art of
+                drawing across generations.
+              </p>
+              <div class="meta">Art History • 8 min read</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/photo 3.png" alt="Article 2" />
+            <div class="content">
+              <h5>Digital Drawing: Tools Every Artist Should Try</h5>
+              <p>
+                A guide to the best tools and apps for creating stunning digital
+                artwork.
+              </p>
+              <div class="meta">Technology • 10 min read</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/photo 4.png" alt="Article 3" />
+            <div class="content">
+              <h5>How to Master the Art of Portrait Sketching</h5>
+              <p>
+                Tips and techniques to bring lifelike expressions to your
+                drawings.
+              </p>
+              <div class="meta">Tutorial • 9 min read</div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/img/photo 5.png" alt="Article 4" />
+            <div class="content">
+              <h5>The Role of Drawing in Art Therapy</h5>
+              <p>
+                Learn how sketching can help improve mental health and
+                well-being.
+              </p>
+              <div class="meta">Wellness • 7 min read</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOP CREATORS -->
+      <div class="top-creator" id="top-creator">
+        <h1>Top Creators</h1>
+        <div class="creator-grid">
+          <div class="creator-item">
+            <img src="assets/img/profile 1.jpg" alt="Alex Young" />
+            <div>
+              <h5>Alex Young</h5>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div class="creator-item">
+            <img src="assets/img/profile 2.jpg" alt="Joe Alen" />
+            <div>
+              <h5>Joe Alen</h5>
+              <p>Digital Artist</p>
+            </div>
+          </div>
+          <div class="creator-item">
+            <img src="assets/img/profile 3.jpg" alt="Alexa Timber" />
+            <div>
+              <h5>Alexa Timber</h5>
+              <p>Digital Creator</p>
+            </div>
+          </div>
+          <div class="creator-item">
+            <img src="assets/img/profile 4.jpg" alt="Ashley Cole" />
+            <div>
+              <h5>Ashley Cole</h5>
+              <p>Artist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CRUD API -->
+      <div class="form-container" id="article">
+        <div class="form-header">
+          <h1>Latest News</h1>
+
+          <div class="see-all-crud">
+            <a id="seeAll-crud" class="bx bx-down-arrow-alt bx-sm"></a>
+            <a
+              id="less-crud"
+              style="display: none"
+              class="bx bx-up-arrow-alt bx-sm"
+            ></a>
+          </div>
+        </div>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search..." />
+        </div>
+        <a href="tambah.html" class="btn-add">+ Create Blog</a>
+      </div>
+      <!-- Blog Posts Grid -->
+      <div id="blogPosts" class="blog-grid"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-contact" id="contact-us">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>
+            If you have any questions or inquiries, feel free to reach out to
+            us.
+          </p>
+          <div class="contact-details">
+            <p>
+              <strong>Email:</strong>
+              <a href="#">inkspire@gmail.com</a>
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="#">+123 456 7890</a>
+            </p>
+            <p><strong>Address:</strong> Denpasar, Bali (Indonesia).</p>
+            <p>&copy; 2025 InkSpire. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-icon"
+            ><i class="bx bxl-facebook"></i> Facebook</a
+          >
+          <a href="#" class="social-icon"
+            ><i class="bx bxl-whatsapp"></i> Whatsapp</a
+          >
+          <a href="#" class="social-icon"
+            ><i class="bx bxl-instagram"></i> Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

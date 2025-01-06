@@ -19,7 +19,7 @@ document.getElementById("loginForm")?.addEventListener("submit", async (e) => {
   if (response.ok) {
     const data = await response.json();
     localStorage.setItem("token", data.token);
-    window.location.href = "index.html";
+    window.location.href = "blog.html";
   } else {
     alert("Login failed");
   }
@@ -51,13 +51,13 @@ document
 
     if (response.ok) {
       alert("Registration successful");
-      window.location.href = "login-register.html";
+      window.location.href = "index.html";
     } else {
       alert("Registration failed ");
     }
   });
 
-// Fungsi untuk menampilkan blog posts di index.html
+// Fungsi untuk menampilkan blog posts di blog.html
 async function displayBlogPosts() {
   const response = await fetch(`${base_url}/blog`, {
     method: "GET",
@@ -132,7 +132,7 @@ document.getElementById("blogForm")?.addEventListener("submit", async (e) => {
         icon: "success",
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = "index.html#article";
+          window.location.href = "blog.html#article";
         }
       });
     } else {
@@ -175,7 +175,7 @@ document.getElementById("editForm")?.addEventListener("submit", async (e) => {
         icon: "success",
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = "index.html#article";
+          window.location.href = "blog.html#article";
         }
       });
     } else {
@@ -218,7 +218,7 @@ async function deletePost(id) {
             icon: "success",
           }).then(() => {
             displayBlogPosts();
-            window.location.href = "index.html#article";
+            window.location.href = "blog.html#article";
           });
         } else {
           Swal.fire(
@@ -239,7 +239,7 @@ async function deletePost(id) {
 // Fungsi untuk logout
 function logout() {
   localStorage.removeItem("token");
-  window.location.href = "login-register.html";
+  window.location.href = "index.html";
 }
 
 document.getElementById("logoutButton")?.addEventListener("click", (e) => {
